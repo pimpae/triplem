@@ -81,3 +81,80 @@ a:hover{
 }*/  
 
 
+.navbar{
+  background-color: #060709;
+}
+.navbar .dropdown-toggle:after { content: none }
+.navbar .navbar-collapse .navbar-nav .nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Kanit-Regular;
+ 
+  text-align: center;
+}
+
+ 
+.navbar .navbar-nav .nav-item.active .nav-link:after{
+  content: "";
+ 
+  border-style: solid;
+  border-width: 30px 15px 0 0;
+  border-color: #fff transparent transparent transparent;
+  
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,.navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #ffffff;
+  background-color: #f4751c;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item.active :before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 44px 18px;
+  border-color: transparent transparent #f4751c transparent;
+  position: absolute;
+  margin-left: -26px;
+  margin-top: -9px;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item.active :after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 43px 18px 0 0;
+  border-color: #f4751c transparent transparent transparent;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: -8px;
+}
+
+
+.navbar .navbar-collapse .navbar-nav .nav-item:hover :before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 44px 18px;
+  border-color: transparent transparent #f4751c transparent;
+  position: absolute;
+  margin-left: -26px;
+  margin-top: -9px;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item:hover :after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 43px 18px 0 0;
+  border-color: #f4751c transparent transparent transparent;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: -8px;
+}
