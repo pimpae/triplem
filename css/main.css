@@ -1,0 +1,83 @@
+@font-face{
+  font-family: Kanit-Bold;
+  src: url(../fonts/kanit/Kanit-Bold.ttf);
+  font-style: normal;
+  font-variant:initial;
+}
+@font-face{
+  font-family: Kanit-Light;
+  src: url(../fonts/kanit/Kanit-Light.ttf);
+  font-style: normal;
+  font-variant:initial;
+}
+@font-face{
+  font-family: Kanit-Medium;
+  src: url(../fonts/kanit/Kanit-Medium.ttf);
+  font-style: normal;
+  font-variant:initial;
+}
+ 
+@font-face{
+  font-family: Kanit-Regular;
+  src: url(../fonts/kanit/Kanit-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
+}
+@font-face{
+  font-family: FontAwesome;
+  src: url(../fonts/fonts/FontAwesome.otf);
+  font-style: normal;
+  font-variant:initial;
+}
+ 
+ 
+/*html {
+  scroll-behavior: smooth;
+}*/
+.none-pad{
+  padding: 0px 0px 0px 0px !important;
+} 
+.none-right{
+  margin-right: -15px;
+} 
+.none-left{
+  margin-left: -15px;
+} 
+
+
+ 
+ 
+@media only screen and (max-width: 991px) { /* MOBILE */
+  .mb-x{
+    display: none !important;
+  }
+  .none-xs{
+    padding: 0px 0px 0px 0px !important;
+  }
+  .none-xs2{
+    padding: 2px 2px 2px 2px !important;
+  }
+  .none-xxs{
+    padding: -15px -15px -15px -15px !important;
+  }
+  .marx-15{
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 992px) { /* PC */
+  .pc-x{
+    display: none !important;
+  } 
+  .none-pc{
+    padding: 0px 0px 0px 0px !important;
+  }
+}
+
+a:hover{
+  text-decoration: none;
+}
+/*.banner {
+  height: 100vh;
+}*/  
+
+
