@@ -9,9 +9,13 @@
    <link href="css/bootstrap.css" rel="stylesheet">
    <link href="css/main.css" rel="stylesheet" type="text/css" />
    <link href="fonts/web-fonts-with-css/css/all.css" rel="stylesheet">
-   
+   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
    <title> โชว์รูม TRIPLE-M Premium used cars จำหน่ายรถมือสอง รถยนต์มือสอง  </title>
+
+   <script src="js/lightslider.js"></script>
+   <link href="css/lightslider.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -56,16 +60,208 @@
    </header>
 
    <main>
+      <section>
+         <div class="container-fluid none-pad">
+            <img src="images/bg-1" class="img-fluid d-block mx-auto">
+         </div>
+         <div class="container">
+            <div class="col search-box"> 
+               <form class="">
+                  <h3>ค้นหารถ</h3>
+                  <div class="row">
+                     <div class="col">
+                        <div class="form-group aw">
+                           <select class="form-control" id="search_bn" name="search_bn">
+                              <option selected disabled>ยี่ห้อรถ</option>
+                              <option value="AUDI">AUDI</option>
+                              <option value="BMW">BMW</option>
+                              <option value="CHEVROLET">CHEVROLET</option>
+                              <option value="FIAT">FIAT</option>
+                              <option value="FORD">FORD</option>
+                              <option value="HONDA">HONDA</option>
+                              <option value="HUMMER">HUMMER</option>
+                              <option value="HYUNDAI">HYUNDAI</option>
+                              <option value="ISUZU">ISUZU</option>
+                              <option value="JAGUAR">JAGUAR</option>
+                              <option value="LAMBORGHINI">LAMBORGHINI</option>
+                              <option value="LAND ROVER">LAND ROVER</option>
+                              <option value="MAZDA">MAZDA</option>
+                              <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+                              <option value="MINI">MINI</option>
+                              <option value="NISSAN">NISSAN</option>
+                              <option value="PEUGEOT">PEUGEOT</option>
+                              <option value="PORSCHE">PORSCHE</option>
+                              <option value="SMART">SMART</option>
+                              <option value="SUZUKI">SUZUKI</option>
+                              <option value="TOYOTA">TOYOTA</option>
+                              <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="form-group aw">
+                           <select class="form-control" id="search_md" name="search_md">
+                              <option selected disabled>รุ่นรถ</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="form-group aw">
+                           <select class="form-control" id="search_sm" name="search_sm">
+                              <option selected disabled>โฉมรถ</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="form-group aw">                         
+                           <select name="search_yr" class="form-control" id="search_yr">
+                              <option value="">เลือกปีรถ</option>
+                              <option value="1">2019 - 2020</option>
+                              <option value="2">2018 - 2019</option>
+                              <option value="3">2017 - 2018</option>
+                              <option value="4">2016 - 2017</option>
+                              <option value="5">2015 - 2016</option>
+                              <option value="6">2014 - 2015</option>
+                              <option value="7">2013 - 2014</option>
+                              <option value="8">2012 - 2013</option>
+                              <option value="9">2011 - 2012</option>
+                              <option value="10">2010 - 2011</option>
+                              <option value="11">2009 - 2010</option>
+                              <option value="12">2008 - 2009</option>
+                              <option value="13">2007 - 2008</option>
+                              <option value="14">2006 - 2007</option>
+                              <option value="15">2005 - 2006</option>
+                              <option value="16">2004 - 2005</option>
+                              <option value="17">2003 - 2004</option>
+                              <option value="18">2002 - 2003</option>
+                              <option value="19">2001 - 2002</option>
+                              <option value="20">2000 - 2001</option>
+                              <option value="21">1999 - 2000</option>
+                              <option value="22">1998 - 1999</option>
+                              <option value="23">1997 - 1998</option>
+                              <option value="24">1996 - 1997</option>
+                              <option value="25">1995 - 1996</option>
+                              <option value="26">1994 - 1995</option>
+                              <option value="27">น้อยกว่า 1994</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="form-group">
+                           <button type="button" class="btn-search"><i class="fas fa-search"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </form>        
+            </div>
+         </div>
+      </section>
+      <section class="brand-main">
+         <div class="container car-brand-img ">
+            <div class="clearfix">&nbsp;</div>
+            <div class="item none-pad">
+               <ul id="box-brand" class="box-brand">
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/mazda.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/mercedes-benz.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/mini.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/893px-Mitsubishi_logo.svg.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/nissan.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/peugeot.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/porsche.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/smart.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/suzuki.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <img src="images/brand/toyota.png" class="d-block mx-auto  img-fluid">
+                     </a>
+                  </li>
+            
+
+               </ul>
+            
+            </div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="m-about">
+               <h2>
+                  โชว์รูม <span>TRIPLE-M Premium used cars</span> <br>
+                  จำหน่ายรถมือสอง, รถยนต์มือสอง, รถ เกรด A, Premium Used Cars
+               </h2>
+               <p>
+                  ซื้อ ขาย แลกเปลี่ยน รถมือสองเกรด A Premium Used Cars รับประกันไม่มีชน หากมีชนรับซื้อคืนเต็มราคา ลองเข้ามาชมตัวจริงประกอบการตัดสินใจ
+                  ก่อนได้ หากจัดไฟแนนซ์ไม่ผ่าน ยินดีคืนเงินจองเต็มจำนวนทันที โทรมาได้เลย : 098-3126555 หรือทาง Line ID : @triplem **Please feel free 
+                  to call us 098-3126555 Line ID : @triplem และรับซื้อรถทุกรุ่น/ยี่ห้อ ที่ให้ราคาคุณสูงกว่าที่อื่นแน่นอน
+               </p>
+               <a href="#" class="btn-s"><i class="fab fa-facebook-f"></i> แชร์ 1.3 พัน</a>
+               <a href="#" class="btn-s"><i class="fab fa-line"></i> Add friend</a>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+         </div>
+      </section>
    </main>
-
-
-   
-   
+ 
    <footer>
    </footer>
 
 
-
+   <script>
+      $(document).ready(function() {
+ 
+         $("#box-brand").lightSlider({
+            item:10,
+            loop:true,
+            keyPress:true,
+         });   
+      });
+   </script>
+   <style type="text/css">
+      .lSPager, .lSAction{
+         display: none;
+      }
+   </style>
 </body>
  
 
