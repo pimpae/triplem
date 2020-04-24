@@ -297,10 +297,22 @@ a:hover{
   font-size: 24px;
   color: #fff;
 }
+.h3x{
+  font-family: Prompt-Regular;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
 .m-about h2 span{
   font-family: Prompt-Italic;
   font-size: 40px;
-  color: #f4751c;
+  color: #f4751c !important;
+}
+.m-about h3 span{
+  font-family: Prompt-Italic;
+  font-size: 40px;
+  color: #f4751c !important;
 }
 .m-about p{
   font-family: Prompt-Thin;
@@ -377,9 +389,21 @@ a:hover{
 }
 .sec-promotion{
   background-image: url("../images/bg-2.png");
+  background-repeat: no-repeat;
+  background-color: #060709;
 }
-
+.sec-promotion2{
+  background: url("../images/bg-2.png")  center top no-repeat, url("../images/bg-3.png")  center bottom no-repeat;
+  background-color: #060709;
+  background-size: 100%;
+}
 .sec-promotion h3{
+  font-family: Prompt-Medium;
+  text-align: 20px;
+  text-align: center;
+  color: #fff;
+}
+.sec-promotion2 h3{
   font-family: Prompt-Medium;
   text-align: 20px;
   text-align: center;
@@ -791,6 +815,63 @@ footer small{
   background-color: #d75c05 !important;
 
 }
+
+.ul-list{
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.ul-list li{
+  display: inline;
+  margin-right: -5px;
+  margin-left: 0px;
+  padding-right: -5px;
+  padding-left: 0px;
+}
+.ul-list li a{
+  font-size: 24px;
+  color: #fff;
+  background-color: #646464;
+  font-family: Kanit-Bold;
+  padding: 5px 18px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.ul-list li a:hover{
+  background-color: #565555; 
+}
+.ul-list li.active a{
+  background-color: #f4751c; 
+  box-shadow: 0px 0px 0px 6px rgba(244,117,28,0.34);
+}
+.ul-list li:first-child a{
+  font-size: 24px;
+  padding: 5px 0px;
+  padding-right: 0px;
+  margin-right: 12px;
+}
+
+.ul-list li:last-child a{
+  font-size: 24px;
+  padding: 5px 4px;
+  margin-left:10px;
+}
+.vid-car .col-lg-4{
+  margin-top: 30px;
+}
+.vid-body{
+  background-color: #1c1c1c;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+.vid-body a{
+  background-color: #1c1c1c;
+  font-family: Kanit-Regular;
+  color: #fff;
+  font-size: 20px;
+
+}
+
 
 @media only screen and (max-width: 991px) { /* MOBILE */
   .f-ma{
