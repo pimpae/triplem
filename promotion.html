@@ -26,6 +26,49 @@
             <a href="#" class="navbar-brand ">                
                <img src="images/logo-tpm.jpg"   alt="" class="d-inline-block align-middle  ">      
             </a>
+
+            <a class="nav-button ml-auto mr-4 pc-x">
+               <span id="nav-icon3">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </span>
+            </a>
+
+            <div class="fixed-top main-menu ">
+               <div class="flex-center p-5">
+                  <ul class="navbar-nav flex-column">
+                     <li class="nav-item ">
+                     <a href="index.html" class="nav-link">หน้าหลัก </a>
+                  </li>
+                  <li class="nav-item active">
+                     <a href="index.html" class="nav-link">หน้าแรก </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     รถมือสอง
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="hand-car.html">TOYOTA</a>
+                        <a class="dropdown-item" href="hand-car.html">HONDA</a>
+                        <a class="dropdown-item" href="hand-car.html">AUDI</a>
+                        <a class="dropdown-item" href="hand-car.html">PORSCHE</a>
+                     </div>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="recommend-car.html" class="nav-link">แนะนำรถ</a>
+                  </li> 
+                  <li class="nav-item ">
+                     <a href="contact-us.html" class="nav-link">ติดต่อเรา</a>
+                  </li>
+                  <li class="nav-item ">
+                     <a href="questionnaire.html" class="nav-link">แบบสอบถาม</a>
+                  </li>  
+                  </ul>
+  
+               </div>
+            </div>
  
             <div id="navbarM" class="collapse navbar-collapse  " >
                <ul class="navbar-nav  ">
@@ -86,10 +129,10 @@
 
 
                <div class="clearfix">&nbsp;</div>
-               <a href="javascript:void(0);" class="show-list" id="list">
+               <a href="javascript:void(0);" class="show-list mb-x" id="list">
                   <i class="fas fa-list"></i>
                </a>
-               <a href="javascript:void(0);" class="show-grid active" id="grid">
+               <a href="javascript:void(0);" class="show-grid mb-x active" id="grid">
                   <i class="fas fa-th-large"></i>
                </a>
             </div>
@@ -708,6 +751,16 @@
          display: none;
       }
    </style>
+
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.nav-button').click(function(){
+         $('body').toggleClass('nav-open');
+        });
+      });
+   </script>
+
+
 </body>
  
 
