@@ -470,7 +470,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -506,7 +506,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -542,7 +542,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -578,7 +578,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -614,7 +614,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -650,7 +650,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -686,7 +686,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -722,7 +722,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -758,7 +758,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -794,7 +794,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -830,7 +830,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -866,7 +866,7 @@
                            </div>
                         </div>
                         <div class="col set-al">
-                           <a href="car-detail.html" class="btn-s">ดูรายละเอียด</a>
+                           <a href="car-detail.html" class="btn-s2">ดูรายละเอียด</a>
                         </div>
                      </div>
                      </a>
@@ -877,7 +877,7 @@
             <div class="clearfix">&nbsp;</div>
 
             <div class="col text-center">
-               <a href="#" class="btn-m">ดูรถทั้งหมด</a>
+               <a href="#" class="btn-m2">ดูรถทั้งหมด</a>
             </div>
          </div>
          <div class="clearfix">&nbsp;</div>
@@ -960,15 +960,27 @@
    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v6.0&appId=3087114857965890&autoLogAppEvents=1"></script>
    <script src='https://www.google.com/recaptcha/api.js'></script>
    <script>
+    
       $(document).ready(function() {
- 
-         $("#box-brand").lightSlider({
-            item:10,
-            loop:true,
-            keyPress:true,
-         });   
+        
+         var width = $(window).width();
+         if (width>992) {
+            $("#box-brand").lightSlider({
+               item:10,
+               loop:true,
+               keyPress:true,
+            });   
+         }
+         else{
+            $("#box-brand").lightSlider({
+               item:6,
+               loop:true,
+               keyPress:true,
+            });  
+         }
+           
       });
-
+    
       $(".totop").click(function(){       
          document.body.scrollTop = 0;
          document.documentElement.scrollTop = 0;

@@ -717,12 +717,23 @@
    <script src='https://www.google.com/recaptcha/api.js'></script>
    <script>
       $(document).ready(function() {
- 
-         $("#box-brand").lightSlider({
-            item:10,
-            loop:true,
-            keyPress:true,
-         });   
+        
+         var width = $(window).width();
+         if (width>992) {
+            $("#box-brand").lightSlider({
+               item:10,
+               loop:true,
+               keyPress:true,
+            });   
+         }
+         else{
+            $("#box-brand").lightSlider({
+               item:6,
+               loop:true,
+               keyPress:true,
+            });  
+         }
+           
       });
 
       $(".totop").click(function(){       
