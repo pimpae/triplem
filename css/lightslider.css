@@ -168,13 +168,15 @@
     opacity: 1;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
+    
 }
 .lSAction > a:hover {
-    opacity: 0.85;
+    opacity: 1;
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
     left: 10px;
+    cursor: pointer;
 }
 .lSAction > .lSPrev:before{
     content: "";
@@ -182,12 +184,14 @@
     content: "\e875";  
     color: #fff;
     padding: 10px 12px;
-    background-color: #f4751c;
+    background-color: rgba(244,117,28,1);
     box-shadow: 0px 0px 0px 6px rgba(244,117,28,0.34);
+ 
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
     right: 10px;
+    cursor: pointer;
 }
 
 .lSAction > .lSNext:before{
@@ -196,7 +200,7 @@
     content: "\e876";  
     color: #fff;
     padding: 10px 12px;
-    background-color: #f4751c;
+    background-color: rgba(244,117,28,1);
     box-shadow: 0px 0px 0px 6px rgba(244,117,28,0.34);
     margin-left: -10px;
 }
