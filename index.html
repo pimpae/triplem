@@ -111,9 +111,40 @@
    <main>
       <section class="search-m">
          <div class="container-fluid none-pad">
-            <img src="images/bg-1.png" class="img-fluid d-block mx-auto">
-         </div>
-         <div class="container">
+            
+            <div id="banner" class="carousel slide carousel-fade" data-ride="carousel" style="z-index: 0">
+              
+               <ul class="carousel-indicators">
+                  <li data-target="#banner" data-slide-to="0" class="active"></li>
+                  <li data-target="#banner" data-slide-to="1"></li>
+                  <li data-target="#banner" data-slide-to="2"></li>
+               </ul>
+            
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="images/bg-1.png" class="img-fluid d-block mx-auto">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="images/bg-1.png" class="img-fluid d-block mx-auto">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="images/bg-1.png" class="img-fluid d-block mx-auto">
+                  </div>               
+               </div>
+         
+               <a class="carousel-control-prev" href="#banner" data-slide="prev">
+                  <span>
+                     <i class="fas fa-chevron-left"></i>
+                  </span>
+               </a>
+               <a class="carousel-control-next" href="#banner" data-slide="next">
+                  <span>
+                     <i class="fas fa-chevron-right"></i>
+                  </span>
+               </a>
+            </div>
+        
+         <div class="container" style="z-index: 99">
             <div class="col search-box"> 
                <form class="">
                   <h3>ค้นหารถ</h3>
